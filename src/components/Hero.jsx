@@ -3,7 +3,7 @@ import profilImg from '../assets/profil.png'
 
 const Hero = () => {
   return (
-    <section className='w-full min-h-screen flex items-center justify-between px-30 pt-24'>
+    <section className='w-full min-h-screen flex items-center justify-between px-30 py-auto'>
         <div>
             <h1 className='text-white text-5xl font-bold mb-1'>HI, I am</h1>
             <h1 className='bg-gradient-to-r from-[#34D399] to-[#23A7B9] bg-clip-text text-transparent text-5xl font-bold mb-1'>RAHERINIRINA</h1>

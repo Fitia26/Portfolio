@@ -11,7 +11,7 @@ const About = () => {
      { label: "Tools", items: ["Git", "GitHub", "Figma"] },
    ]
   return (
-    <section id='about' className='w-full min-h-screen flex gap-10 items-center justify-between px-30 pt-24'>
+    <section id='about' className='w-full min-h-screen flex gap-10 items-center justify-between px-30 py-auto'>
         <div className='relative border border-white/50 rounded-xl overflow-hidden'>
             <img src={profilImg} className='relative w-[500px] h-[500px] object-cover rounded-xl'/>
         </div>

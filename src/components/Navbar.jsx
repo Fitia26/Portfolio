@@ -5,7 +5,7 @@ export default function Navbar(){
         { label: "Home", href: "#" , id: "home"},
         { label: "About", href: "#about", id: "about" },
         { label: "Experience", href: "#experience", id: "experience" },
-        { label: "Project", href: "#project", id: "project" },
+        { label: "Projects", href: "#projects", id: "projects" },
         { label: "Contact", href: "#contact", id: "contact" }
     ]
     return(  
