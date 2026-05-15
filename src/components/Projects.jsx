@@ -23,15 +23,15 @@ const Projects = () => {
       tags: ["Python", "Flask", "HTML5", "CSS3", "JavaScript", "Chart.js"],
       sourceCode: "https://github.com/Fitia26/"
     },
-    // {
-    //   title: "DevTool Kit 3",
-    //   description: "A RESTful API built with Flask — no frontend, pure backend. Provides a collection of developer utilities accessible via clean HTTP endpoints.",
-    //   images: [
-    //     "/Projects/devtoolkit_terminal.png"
-    //   ],
-    //   tags: ["Python", "Flask", "REST API", "Json"],
-    //   sourceCode: "https://github.com/Fitia26/"
-    // }
+    {
+      title: "DevTool Kit 3",
+      description: "A RESTful API built with Flask — no frontend, pure backend. Provides a collection of developer utilities accessible via clean HTTP endpoints.",
+      images: [
+        "/Projects/devtoolkit_terminal.png"
+      ],
+      tags: ["Python", "Flask", "REST API", "Json"],
+      sourceCode: "https://github.com/Fitia26/"
+    }
   ]
   return (
     <section id="projects" className='w-full min-h-screen px-6 lg:px-30 pt-24'>

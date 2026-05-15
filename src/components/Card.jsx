@@ -8,13 +8,13 @@ const Card = ({title, description, images, tags, sourcecode}) => {
   const prev = () => setCurrentImage((i) => i === 0 ? images.length - 1 : i - 1)
   const next = () => setCurrentImage((i) => i === images.length - 1 ? 0 : i + 1)
   return (
-    <div className='border border-white/50 rounded-xl overflow-hidden flex flex-col p-4 gap-3'>
+    <div className='border border-white/50 rounded-xl overflow-hidden flex flex-col px-auto lg:p-4 gap-3'>
       <div className='relative'>
         <img src={images[currentImage]} className='w-full h-48 object-cover'/>
         <button onClick={prev} className='absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-2 py-1 rounded-full'>←</button>
         <button onClick={next} className='absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-2 py-1 rounded-full'>→</button>
       </div>
-      <div className='p-4 flex flex-col gap-3'>
+      <div className='flex flex-col gap-3'>
         <h3 className='text-white '>{title}</h3>
         <p className='text-text-muted'>{description}</p>
         <div className='flex flex-wrap gap-2'>

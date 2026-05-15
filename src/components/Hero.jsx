@@ -3,7 +3,7 @@ import profilImg from '../assets/profil.png'
 
 const Hero = () => {
   return (
-    <section className='w-full min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 lg:px-30 pt-24'>
+    <section id='home' className='w-full min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 lg:px-30 pt-24'>
         <div className='order-2 lg:order-1 mb-7 lg:mb-0'>
             <h1 className='text-white text-3xl lg:text-5xl font-bold mb-0 lg:mb-1'>HI, I am</h1>
             <h1 className='bg-gradient-to-r from-[#34D399] to-[#23A7B9] bg-clip-text text-transparent text-3xl lg:text-5xl font-bold mb-0 lg:mb-1'>RAHERINIRINA</h1>
