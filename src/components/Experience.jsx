@@ -18,8 +18,8 @@ const Experience = () => {
   }
 ]
   return (
-    <section id='experience' className='w-full min-h-screen px-30 pt-24'>
-      <h1 className='text-white text-5xl'>Work Experience</h1>
+    <section id='experience' className='w-full min-h-screen px-6 lg:px-30 pt-24'>
+      <h1 className='text-white text-3xl lg:text-5xl'>Work Experience</h1>
       {
         experiences.map(
             (experience) => (
@@ -45,7 +45,7 @@ const Experience = () => {
                             )
                         }
                     </ul>
-                    <div className='flex gap-2 mt-2'>
+                    <div className='flex flex-wrap gap-2 mt-2 '>
                         {
                             experience.tags.map(
                                 (tag) => (

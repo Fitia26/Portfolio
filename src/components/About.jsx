@@ -11,12 +11,12 @@ const About = () => {
      { label: "Tools", items: ["Git", "GitHub", "Figma"] },
    ]
   return (
-    <section id='about' className='w-full min-h-screen flex gap-10 items-center justify-between px-30 py-auto'>
+    <section id='about' className='w-full min-h-screen flex flex-col lg:flex-row gap-10 items-center justify-between px-6 lg:px-30 pt-24'>
         <div className='relative border border-white/50 rounded-xl overflow-hidden'>
-            <img src={profilImg} className='relative w-[500px] h-[500px] object-cover rounded-xl'/>
+            <img src={profilImg} className='relative w-full lg:w-[500px] h-[400px] lg:h-[500px] object-cover rounded-xl'/>
         </div>
-        <div className='w-[600px]'>
-            <h1 className='text-5xl mb-4'><span className='text-white'>Junior by title.</span> <span className='text-primary'>Serious by nature</span></h1>
+        <div className='w-full lg:w-[600px]'>
+            <h1 className='text-3xl lg:text-5xl mb-4'><span className='text-white'>Junior by title.</span> <span className='text-primary'>Serious by nature</span></h1>
             <p className='text-justify text-text-muted mb-6'>
                 I build modern, scalable and user-friendly web applications that solve real-world problems. <br />
                 Junior Web Developer based in Antananarivo, Madagascar, with a background in Computer Science & Telecommunications. I have hands-on experience

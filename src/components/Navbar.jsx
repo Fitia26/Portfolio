@@ -15,7 +15,7 @@ export default function Navbar(){
                     <li key={link.id}>
                         <a href={link.href}
                             onClick={() => setActiveLink(link.id)}
-                            className={activeLink === link.id? "text-white underline decoration-primary decoration-2 underline-offset-8" : "text-text-muted"}
+                            className={activeLink === link.id? "text-white underline decoration-primary decoration-2 underline-offset-8" : "text-text-muted hover:text-primary transition-all duration-300"}
                         >
                             {link.label}
                         </a>

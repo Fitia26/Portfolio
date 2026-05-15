@@ -31,15 +31,15 @@ const Contact = () => {
     }
     
   return (
-    <section id='contact' className='w-full min-h-screen px-30 pt-24'>
-      <h1 className='text-white font-bold text-5xl'>
+    <section id='contact' className='w-full min-h-screen px-6 lg:px-30 pt-24'>
+      <h1 className='text-white font-bold text-3xl lg:text-5xl'>
         Let's work together
       </h1>
       <p className='text-text-muted text-xs pt-5'>
         An opportunity, a question, or just want to say hello — I always reply.
       </p>
-      <div className='flex justify-between pt-5'>
-        <form onSubmit={handlesubmit} className='flex flex-col w-[500px]'>
+      <div className='flex flex-col lg:flex-row justify-between pt-5'>
+        <form onSubmit={handlesubmit} className='flex flex-col w-[450px] lg:w-[500px]'>
             <div className='flex flex-col gap-1 mb-4'>
                 <label htmlFor="name" className='text-white text-sm mb-1'>Name</label>
                 <input name='name' className='bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white w-full focus:outline-none focus:border-primary' id='name' type="text" value={formData.name} onChange={handleChange} placeholder='John Doe'/>
@@ -54,7 +54,7 @@ const Contact = () => {
                 className='bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white w-full focus:outline-none focus:border-primary' rows={5} placeholder='Hi Fitiavana, I would like to...'/>
             </div>
             
-            <button className='text-text-dark bg-primary border rounded-lg px-2 py-2 w-50'>
+            <button className='text-text-dark bg-primary border rounded-lg px-2 py-2 w-50 cursor-pointer hover:bg-dark hover:text-primary hover:border hover:border-primary transition-all duration-300'>
                 Send message
             </button>
         </form>
@@ -62,7 +62,7 @@ const Contact = () => {
             {
                 datas.map(
                     (data) => (
-                        <p key={data.title} className='flex gap-10 pt-5'>
+                        <p key={data.title} className='flex gap-10 pt-3 lg:pt-5'>
                             <span className='text-text-muted'>{data.title}</span>
                             <span className='text-white/90'>{data.info}</span>
                         </p>
