@@ -1,8 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import useScrollAnimation from '../hooks/useScrollAnimation'
 
 const Contact = () => {
+    const ref = useScrollAnimation()
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -42,7 +44,7 @@ const Contact = () => {
     
     
   return (
-    <section id='contact' className='w-full min-h-screen px-6 lg:px-30 pt-24'>
+    <section id='contact' ref={ref} className='animate-hidden w-full min-h-screen px-6 lg:px-30 pt-24'>
       <h1 className='text-white font-bold text-3xl lg:text-5xl'>
         Let's work together
       </h1>

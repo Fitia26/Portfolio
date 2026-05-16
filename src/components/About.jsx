@@ -1,6 +1,7 @@
 import React from 'react';
 import profilImg from '../assets/Profile portfolio.png'
 import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'
+import useScrollAnimation from '../hooks/useScrollAnimation'
 
 const About = () => {
     const techStack = [
@@ -10,8 +11,9 @@ const About = () => {
      { label: "Database", items: ["MySQL", "PostgreSQL", "SQLite"] },
      { label: "Tools", items: ["Git", "GitHub", "Figma"] },
    ]
+   const ref = useScrollAnimation()
   return (
-    <section id='about' className='w-full min-h-screen flex flex-col lg:flex-row gap-10 items-center justify-between px-6 lg:px-30 pt-24'>
+    <section id='about' ref={ref} className='animate-hidden w-full min-h-screen flex flex-col lg:flex-row gap-10 items-center justify-between px-6 lg:px-30 pt-24'>
         <div className='relative border border-white/50 rounded-xl overflow-hidden'>
             <img src={profilImg} className='relative w-full lg:w-[500px] h-[400px] lg:h-[500px] object-cover rounded-xl'/>
         </div>

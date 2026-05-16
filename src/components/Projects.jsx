@@ -1,7 +1,9 @@
 import React from 'react'
 import Card from './Card'
+import useScrollAnimation from '../hooks/useScrollAnimation'
 
 const Projects = () => {
+  const ref = useScrollAnimation()
   const projects = [
     {
       title: "DevTool Kit 1",
@@ -34,7 +36,7 @@ const Projects = () => {
     }
   ]
   return (
-    <section id="projects" className='w-full min-h-screen px-6 lg:px-30 pt-24'>
+    <section id="projects" ref={ref} className='animate-hidden w-full min-h-screen px-6 lg:px-30 pt-24'>
       <h1 className='font-bold text-white text-3xl lg:text-5xl'>What I have built</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10'>
         {

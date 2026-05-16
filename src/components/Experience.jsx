@@ -1,6 +1,8 @@
 import React from 'react'
+import useScrollAnimation from '../hooks/useScrollAnimation'
 
 const Experience = () => {
+    const ref = useScrollAnimation()
   const experiences = [
   {
     title: "Web development intern",
@@ -18,7 +20,7 @@ const Experience = () => {
   }
 ]
   return (
-    <section id='experience' className='w-full min-h-screen px-6 lg:px-30 pt-24'>
+    <section id='experience' ref={ref} className='animate-hidden w-full min-h-screen px-6 lg:px-30 pt-24'>
       <h1 className='text-white text-3xl lg:text-5xl'>Work Experience</h1>
       {
         experiences.map(
