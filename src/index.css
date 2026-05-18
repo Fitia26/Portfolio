@@ -26,3 +26,21 @@ body {
   transform: translateY(0);
 }
 
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 #64FFDA44, 0 0 20px #64FFDA22; }
+  50% { box-shadow: 0 0 0 12px #64FFDA11, 0 0 40px #64FFDA44; }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes border-glow {
+  0%, 100% { border-color: #64FFDA44; }
+  50% { border-color: #64FFDA; }
+}
+
+.animate-border-glow {
+  animation: border-glow 2.5s ease-in-out infinite;
+}
+

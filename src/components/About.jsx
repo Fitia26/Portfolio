@@ -14,7 +14,7 @@ const About = () => {
    const ref = useScrollAnimation()
   return (
     <section id='about' ref={ref} className='animate-hidden w-full min-h-screen flex flex-col lg:flex-row gap-10 items-center justify-between px-6 lg:px-30 pt-24'>
-        <div className='relative border border-white/50 rounded-xl overflow-hidden'>
+        <div className='relative border-2 border-primary/30 rounded-xl overflow-hidden animate-border-glow'>
             <img src={profilImg} className='relative w-full lg:w-[500px] h-[400px] lg:h-[500px] object-cover rounded-xl'/>
         </div>
         <div className='w-full lg:w-[600px]'>

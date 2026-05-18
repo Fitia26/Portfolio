@@ -27,21 +27,37 @@ export default function Navbar(){
     }, [])
     return(  
         <nav className="fixed top-0 bg-dark w-full text-text-muted px-12 py-5 z-50">
-            <ul className="hidden lg:flex justify-end gap-8">
-                {links.map((link) => (
-                    <li key={link.id}>
-                        <a href={link.href}
-                            onClick={() => setActiveLink(link.id)}
-                            className={activeLink === link.id? "text-white underline decoration-primary decoration-2 underline-offset-8" : "text-text-muted hover:text-primary transition-all duration-300"}
-                        >
-                            {link.label}
+            <div className="flex justify-between items-center px-12 py-5">
+                <span className='text-white font-bold text-xl'>
+                    RF<span className='text-primary'>.</span>
+                </span>
+                <ul className="hidden lg:flex justify-end gap-8">
+                    {links.map((link) => (
+                        <li key={link.id}>
+                            <a href={link.href}
+                                onClick={() => setActiveLink(link.id)}
+                                className={activeLink === link.id? "text-white underline decoration-primary decoration-2 underline-offset-8" : "text-text-muted hover:text-primary transition-all duration-300"}
+                            >
+                                {link.label}
+                            </a>
+                        </li>
+                    ))}
+
+                    <li>
+                        <a href="#contact"
+                            onClick={() => setActiveLink('contact')}
+                            className='bg-primary text-dark px-4 py-2 rounded-lg font-semibold text-sm hover:bg-transparent hover:text-primary border border-primary transition-all duration-300'>
+                            Hire me
                         </a>
                     </li>
-                ))}
-            </ul>
-            <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-white text-2xl cursor-pointer hover:text-primary transition duration-300">
-                {isOpen ? '✕' : '☰'}
-            </button>
+                </ul>
+
+                <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-white text-2xl cursor-pointer hover:text-primary transition duration-300">
+                    {isOpen ? '✕' : '☰'}
+                </button>
+            </div>
+            
+            
             {isOpen && (
                 <ul className="lg:hidden flex flex-col gap-4 px-12 pb-6">
                     {
@@ -58,6 +74,14 @@ export default function Navbar(){
                             )
                         )
                     }
+
+                    <li>
+                        <a href="#contact"
+                            onClick={() => { setActiveLink('contact'); setIsOpen(false) }}
+                            className='inline-block bg-primary text-dark px-4 py-2 rounded-lg font-semibold text-sm'>
+                            Hire me
+                        </a>
+                    </li>
                 </ul>
             )}
         </nav>
