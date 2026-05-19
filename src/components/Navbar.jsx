@@ -26,7 +26,7 @@ export default function Navbar(){
         return () => observer.disconnect()
     }, [])
     return(  
-        <nav className="fixed top-0 bg-dark w-full text-text-muted px-12 py-5 z-50">
+        <nav className="fixed top-0 bg-dark w-full text-text-muted z-50">
             <div className="flex justify-between items-center px-12 py-5">
                 <span className='text-white font-bold text-xl'>
                     RF<span className='text-primary'>.</span>
