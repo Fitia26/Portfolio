@@ -25,6 +25,17 @@ const Projects = () => {
       tags: ["Python", "Flask", "HTML5", "CSS3", "JavaScript", "Chart.js"],
       sourceCode: "https://github.com/Fitia26/habit-analyzer"
     },
+    {
+      title: "Habit Analyzer",
+      description: "Web application, featuring secure user authentication, complete CRUD functionality, and an interactive analytics dashboard powered by Chart.js for habit progress visualization.",
+      images: [
+        "/Projects/Habit analyser 1.png",
+        "/Projects/Habit analyser 2.png",
+        "/Projects/Habit analyser 3.png"
+      ],
+      tags: ["Python", "Flask", "HTML5", "CSS3", "JavaScript", "Chart.js"],
+      sourceCode: "https://github.com/Fitia26/habit-analyzer"
+    }
     
   ]
   return (
