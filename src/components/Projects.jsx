@@ -26,15 +26,13 @@ const Projects = () => {
       sourceCode: "https://github.com/Fitia26/habit-analyzer"
     },
     {
-      title: "Habit Analyzer",
-      description: "Web application, featuring secure user authentication, complete CRUD functionality, and an interactive analytics dashboard powered by Chart.js for habit progress visualization.",
+      title: "AI resume analyzer",
+      description: "Fullstack AI application (FastAPI + React) that extracts text from PDF/DOCX resumes, analyzes them with GPT-4o-mini, and returns a score, skill detection, structured feedback, and job match percentage.",
       images: [
-        "/Projects/Habit analyser 1.png",
-        "/Projects/Habit analyser 2.png",
-        "/Projects/Habit analyser 3.png"
+        
       ],
-      tags: ["Python", "Flask", "HTML5", "CSS3", "JavaScript", "Chart.js"],
-      sourceCode: "https://github.com/Fitia26/habit-analyzer"
+      tags: ["Python", "FastAPI", "HTML5", "CSS3", "JavaScript", "React"],
+      sourceCode: "https://github.com/Fitia26/Resume_analyzer"
     }
     
   ]
